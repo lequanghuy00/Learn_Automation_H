@@ -1,5 +1,7 @@
 package automation.testsuite;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -21,9 +23,12 @@ public class Day7_Practice extends CommonBase {
 	}
 	
 	@Test
-	public void testBepAnToan()
+	public void praticeSelector()
 	{
-		System.out.print("Test web bep an toan");
+		WebElement bepTu = driver.findElement(By.linkText("Bếp Từ"));
+		System.out.println("bếp từ");
+		WebElement hutMui = driver.findElement(By.partialLinkText("hút mùi"));
+		System.out.println("hút mùi");
 	}
 
 }
