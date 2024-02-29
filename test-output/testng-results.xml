@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-31T22:57:53 ICT" name="Default suite" finished-at="2024-01-31T22:58:05 ICT" duration-ms="12352">
+  <suite started-at="2024-02-29T14:55:17 ICT" name="Default suite" finished-at="2024-02-29T14:55:28 ICT" duration-ms="11350">
     <groups>
     </groups>
-    <test started-at="2024-01-31T22:57:53 ICT" name="Default test" finished-at="2024-01-31T22:58:05 ICT" duration-ms="12352">
-      <class name="automation.testsuite.Day8_btvn">
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.Day8_btvn@306e95ec]" started-at="2024-01-31T22:57:53 ICT" name="openChrome" finished-at="2024-01-31T22:58:04 ICT" duration-ms="10951" status="PASS">
+    <test started-at="2024-02-29T14:55:17 ICT" name="Default test" finished-at="2024-02-29T14:55:28 ICT" duration-ms="11350">
+      <class name="automation.testsuite.Day12_btvn">
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.Day12_btvn@74751b3]" started-at="2024-02-29T14:55:17 ICT" name="openChrome" finished-at="2024-02-29T14:55:25 ICT" duration-ms="7677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openChrome -->
-        <test-method signature="practiceLocator()[pri:0, instance:automation.testsuite.Day8_btvn@306e95ec]" started-at="2024-01-31T22:58:04 ICT" name="practiceLocator" finished-at="2024-01-31T22:58:05 ICT" duration-ms="1137" status="PASS">
+        <test-method signature="btvn12()[pri:0, instance:automation.testsuite.Day12_btvn@74751b3]" started-at="2024-02-29T14:55:25 ICT" name="btvn12" finished-at="2024-02-29T14:55:28 ICT" duration-ms="3603" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- practiceLocator -->
-        <test-method is-config="true" signature="closeChrome()[pri:0, instance:automation.testsuite.Day8_btvn@306e95ec]" started-at="2024-01-31T22:58:05 ICT" name="closeChrome" finished-at="2024-01-31T22:58:05 ICT" duration-ms="209" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeChrome -->
-      </class> <!-- automation.testsuite.Day8_btvn -->
+        </test-method> <!-- btvn12 -->
+      </class> <!-- automation.testsuite.Day12_btvn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
