@@ -6,4 +6,6 @@ public class CT_Common {
 	public static String URL_Alada = "https://alada.vn/tai-khoan/dang-ky.html";
 	public static String URL_btvnd8 = "https://automationfc.github.io/basic-form/index.html";
 	public static String URL_btvnd12 = "http://demo.seleniumeasy.com/input-form-demo.html";
+	public static String URL_rise_d13 = "https://rise.fairsketch.com/signin";
+	
 }
