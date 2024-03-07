@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-02T13:26:46 ICT" name="Default suite" finished-at="2024-03-02T13:29:04 ICT" duration-ms="138333">
+  <suite started-at="2024-03-07T13:24:50 ICT" name="Default suite" finished-at="2024-03-07T13:25:48 ICT" duration-ms="58694">
     <groups>
     </groups>
-    <test started-at="2024-03-02T13:26:46 ICT" name="Default test" finished-at="2024-03-02T13:29:04 ICT" duration-ms="138333">
-      <class name="automation.testsuite.Day13_btvnLogin">
-        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.Day13_btvnLogin@25fb8912]" started-at="2024-03-02T13:26:46 ICT" name="openChrome" finished-at="2024-03-02T13:28:59 ICT" duration-ms="133280" status="PASS">
+    <test started-at="2024-03-07T13:24:50 ICT" name="Default test" finished-at="2024-03-07T13:25:48 ICT" duration-ms="58694">
+      <class name="automation.testsuite.Day14_btvn">
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.Day14_btvn@4f2b503c]" started-at="2024-03-07T13:24:50 ICT" name="openChrome" finished-at="2024-03-07T13:25:10 ICT" duration-ms="20455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openChrome -->
-        <test-method signature="Loginfail()[pri:0, instance:automation.testsuite.Day13_btvnLogin@25fb8912]" started-at="2024-03-02T13:28:59 ICT" name="Loginfail" finished-at="2024-03-02T13:29:04 ICT" duration-ms="4988" status="PASS">
+        <test-method signature="Registersuccess()[pri:0, instance:automation.testsuite.Day14_btvn@4f2b503c]" started-at="2024-03-07T13:25:10 ICT" name="Registersuccess" finished-at="2024-03-07T13:25:48 ICT" duration-ms="37931" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Loginfail -->
-      </class> <!-- automation.testsuite.Day13_btvnLogin -->
+        </test-method> <!-- Registersuccess -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:automation.testsuite.Day14_btvn@4f2b503c]" started-at="2024-03-07T13:25:48 ICT" name="closeDriver" finished-at="2024-03-07T13:25:48 ICT" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- automation.testsuite.Day14_btvn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
