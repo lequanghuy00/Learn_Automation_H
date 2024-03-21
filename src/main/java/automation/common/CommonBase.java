@@ -9,6 +9,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -117,5 +121,61 @@ public class CommonBase {
 			dr.manage().deleteAllCookies();
 			dr.close();
 		}
+	}
+	public WebDriver initChromeDriver()
+	{
+		System.out.println("Launching chrome brower");
+		System.setProperty("webdriver.chrome.driver",
+		System.getProperty("user.dir") + "\\driver\\chromedriver.exe");		
+		ChromeOptions options = new ChromeOptions();
+		//options.addArguments("headless");
+		driver = new ChromeDriver(options);
+		driver.manage().window().maximize();
+		// wait 30s unit web load success
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		return driver;
+	}
+	public WebDriver initFirefoxDriver()
+	{
+		System.out.println("Launching firefox brower");
+		System.setProperty("webdriver.firefox.driver",
+		System.getProperty("user.dir") + "\\driver\\geckodriver.exe");		
+		FirefoxOptions options = new FirefoxOptions();
+		//options.addArguments("headless");
+		driver = new FirefoxDriver(options);
+		driver.manage().window().maximize();
+	
+		// wait 30s unit web load success
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		return driver;
+	}
+	public WebDriver initMSEdgeDriver()
+	{
+		System.out.println("Launching MSEdge brower");
+		System.setProperty("webdriver.edge.driver",
+		System.getProperty("user.dir") + "\\driver\\msedgedriver.exe");		
+		EdgeOptions options = new EdgeOptions();
+		//options.addArguments("headless");
+		driver = new EdgeDriver(options);
+		driver.manage().window().maximize();
+		// wait 30s unit web load success
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		return driver;
+	}
+	public WebDriver setupDriver(String browserName)
+	{
+		switch(browserName.trim().toLowerCase())
+		{
+		case "chrome":
+			driver = initChromeDriver();
+			break;
+		case "firefox":
+			driver = initFirefoxDriver();
+			break;	
+		case "edge":
+			driver = initMSEdgeDriver();
+			break;
+		}
+		return driver;
 	}
 }
